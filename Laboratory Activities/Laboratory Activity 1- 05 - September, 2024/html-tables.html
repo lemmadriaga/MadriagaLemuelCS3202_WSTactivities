@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Schedule</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: 600;
+            color: #4a4e69;
+        }
+        p{
+            text-align: center;
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        .schedule-table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .schedule-table th, .schedule-table td {
+            border: 1px solid #ccc;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .schedule-table th {
+            background-color: #9a8c98;
+            color: white;
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+
+        .schedule-table td {
+            background-color: #f2e9e4;
+            font-size: 0.95em;
+            position: relative;
+        }
+
+        .section {
+            font-size: 0.85em;
+            font-weight: 600;
+            color: #555;
+        }
+
+        .room {
+            font-size: 0.80rem;
+            color: #888;
+            margin-top: 5px;
+            display: block;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 30px;
+            background-color: #4a4e69;
+            color: white;
+            text-align: center;
+            border-radius: 12px;
+        }
+
+        .subject-list {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .subject-list li {
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .subject-color {
+            width: 15px;
+            height: 15px;
+            margin-right: 10px;
+            border-radius: 2px;
+        }
+
+        .cs-4202 { background-color: #e9d3c8; }
+        .cs-3101 { background-color: #f3d8c9; }
+        .cs-3102 { background-color: #f2e9e4; }
+
+    </style>
+</head>
+<body>
+
+    <h1>My Class Schedule</h1>
+    <p>First Semester A.Y. 2024 - 2025 <br> by: Lemuel C. Madriaga</p>
+
+
+    <table class="schedule-table">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>MONDAY</th>
+                <th>TUESDAY</th>
+                <th>WEDNESDAY</th>
+                <th>THURSDAY</th>
+                <th>FRIDAY</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>07:00 AM - 08:00 AM</td>
+                <td rowspan="3" class="cs">CS 415 <br> <span class="section">CS 4202 <br> <span class="room">104</span></span></td>
+                <td rowspan="9">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td rowspan="3">IT 314 <br> <span class="section">CS 3102 <br> <span class="room">LAB 3</span></span></td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>08:00 AM - 09:00 AM</td>
+                <td rowspan="2">IT 321 <br> <span class="section">CS 3101 <br> <span class="room">102</span></span></td>
+                <td rowspan="2">IT 321 <br> <span class="section">CS 3101 <br> <span class="room">102</span></span></td>
+            </tr>
+            <tr>
+                <td>09:00 AM - 10:00 AM</td>
+            </tr>
+            <tr>
+                <td>10:00 AM - 11:00 AM</td>
+                <td rowspan="3">&nbsp;</td>
+                <td rowspan="3">&nbsp;</td>
+                <td rowspan="2">CS 312 <br> <span class="section">CS 3101 <br> <span class="room">SMART</span></span></td>
+                <td rowspan="4">&nbsp;</td>
+            </tr>
+            <tr>
+                <td>11:00 AM - 12:00 PM</td>
+            </tr>
+            <tr>
+                <td>12:00 PM - 1:00 PM</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>1:00 PM - 2:00 PM</td>
+                <td rowspan="2">CS 314 <br> <span class="section">CS 3102 <br> <span class="room">102</span></span></td>
+                <td rowspan="2">CS 311 <br> <span class="section">CS 3101 <br> <span class="room">102</span></span></td>
+                <td rowspan="3">CS 312 <br> <span class="section">CS 3101 <br> <span class="room">ITL</span></span></td>
+            </tr>
+            <tr>
+                <td>2:00 PM - 3:00 PM</td>
+                <td rowspan="2">CS 311 <br> <span class="section">CS 3101 <br> <span class="room">102</span></span></td>
+            </tr>
+            <tr>
+                <td>3:00 PM - 4:00 PM</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <footer>
+        <h2>Course List</h2>
+        <ul class="subject-list">
+            <li><div class="subject-color cs-3101"></div> IT 321 - Human-Computer Interaction</li>
+            <li><div class="subject-color cs-3101"></div> CS 311 - Automata Theory and Formal Languages</li>
+            <li><div class="subject-color cs-3101"></div> CS 312 - Mobile Computing</li>
+            <li><div class="subject-color cs-3102"></div> IT 314 - Web Systems and Technologies</li>
+            <li><div class="subject-color cs-4202"></div> CS 415 - Principles of Operating Systems</li>
+        </ul>
+    </footer>
+
+</body>
+</html>
