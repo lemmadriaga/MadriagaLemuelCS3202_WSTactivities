@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lemuel Madriaga | Lab 4</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body class="bg-gray-900 text-white font-sans">
+    <nav class="fixed w-full z-50 bg-black backdrop-blur-md shadow-2xl">
+      <div
+        class="container mx-auto px-4 py-4 flex flex-wrap justify-between items-center"
+      >
+        <div class="flex items-center">
+          <img
+            src="./assets/cyber.png"
+            alt="CyberNex Logo"
+            class="h-10 w-10 mr-3 rounded-full"
+          />
+          <div
+            class="text-2xl md:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-300"
+          >
+            Lemuel Madriaga
+          </div>
+        </div>
+        <button
+          class="md:hidden text-white focus:outline-none"
+          id="menu-toggle"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+        <div class="hidden md:flex items-center space-x-6" id="menu">
+          <nav
+            class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6"
+          >
+            <a
+              href="#home"
+              class="relative group text-gray-200 hover:text-white transition-colors duration-300 ease-in-out"
+            >
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"
+              ></span>
+              Home
+            </a>
+            <a
+              href="#about"
+              class="relative group text-gray-200 hover:text-white transition-colors duration-300 ease-in-out"
+            >
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"
+              ></span>
+              About
+            </a>
+            <a
+              href="#projects"
+              class="relative group text-gray-200 hover:text-white transition-colors duration-300 ease-in-out"
+            >
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"
+              ></span>
+              Projects
+            </a>
+          </nav>
+          <a href="#contact">
+            <button
+              class="bg-white text-blue-800 px-4 py-2 rounded-full font-bold hover:bg-blue-100 transition-colors"
+            >
+              Contact
+            </button>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      id="home"
+      class="min-h-screen flex items-center justify-center relative bg-cover bg-center font-poppins"
+    >
+      <img
+        class="absolute inset-0 w-full h-full object-cover z-0"
+        src="assets/bg.png"
+        alt=""
+      />
+      <div class="absolute inset-0 bg-black opacity-60 z-10"></div>
+
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black opacity-70 z-1"
+      ></div>
+      <div
+        class="container mx-auto px-4 md:px-8 grid md:grid-cols-2 items-center gap-12 relative z-10"
+      >
+        <div
+          class="text-center md:text-left animate-slide-in text-white space-y-6"
+        >
+          <p
+            class="text-lg md:text-xl font-medium text-gray-300 tracking-widest uppercase"
+          >
+            Current Project
+          </p>
+          <h1
+            class="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg leading-tight font-poppins"
+          >
+            Meet <span class="text-green-500">Safe</span
+            ><span class="text-blue-500">Talks</span> v.1
+          </h1>
+          <h2
+            class="text-xl md:text-2xl font-semibold text-gray-200 mb-6 drop-shadow-md"
+          >
+            Designed by CyberNex CEO,
+            <span class="font-bold">Lemuel Madriaga</span>
+          </h2>
+          <p
+            class="text-base md:text-lg leading-relaxed text-gray-200 drop-shadow-md"
+          >
+            SafeTalks v.1, available on the App Store and Google Play, is a
+            groundbreaking app designed to facilitate meaningful conversations
+            with advanced features like mood-based profiles, interactive forums,
+            and real-time notifications. As the designer of this version, I'm
+            proud of the impact it has made in enhancing communication and
+            connectivity.
+          </p>
+          <p
+            class="text-base md:text-lg leading-relaxed text-gray-200 drop-shadow-md"
+          >
+            Currently, I'm working on SafeTalks v.2, upgrading all designs and
+            functionalities to deliver an even more exceptional user experience.
+            As a full-stack developer, I'm committed to blending creativity and
+            technical excellence to push the boundaries of what SafeTalks can
+            offer.
+          </p>
+          <div class="flex justify-center md:justify-start">
+            <a
+              href="#contact"
+              class="bg-gradient-to-r from-blue-500 to-blue-700 text-white px-6 md:px-10 py-3 md:py-4 rounded-full font-bold text-base md:text-lg hover:shadow-xl hover:scale-105 transition-transform duration-300"
+            >
+              Get in Touch
+            </a>
+          </div>
+        </div>
+        <div class="relative mt-8 md:mt-0">
+          <div
+            class="relative w-full h-64 md:h-96 overflow-hidden rounded-2xl shadow-2xl border-4 border-white transform hover:scale-105 transition-transform duration-300"
+          >
+            <iframe
+              class="w-full h-full object-cover rounded-2xl"
+              src="https://drive.google.com/file/d/1HxNB1Ytnsen85eUBmv16TyeqIuvREQDA/preview"
+              frameborder="0"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container mx-auto px-4 py-16 md:py-24">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="animate-slide-in">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">About Me</h2>
+          <p class="text-base md:text-lg mb-4">
+            I'm a passionate full stack developer with over 3 and a half years
+            of experience in creating scalable web applications. As the CEO of
+            CyberNex Innovate, I lead a team of innovative developers who
+            transform complex challenges into elegant digital solutions.
+          </p>
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6">
+            <div class="bg-gray-800 p-4 rounded-lg text-center glass-morphism">
+              <h3 class="text-xl md:text-2xl font-bold mb-3">Frontend</h3>
+              <div class="flex flex-wrap justify-center gap-2">
+                <span
+                  class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs md:text-sm"
+                  >React</span
+                >
+                <span
+                  class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs md:text-sm"
+                  >Vue.js</span
+                >
+                <span
+                  class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs md:text-sm"
+                  >Angular</span
+                >
+                <span
+                  class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs md:text-sm"
+                  >TypeScript</span
+                >
+                <span
+                  class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs md:text-sm"
+                  >TailwindCSS</span
+                >
+              </div>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg text-center glass-morphism">
+              <h3 class="text-xl md:text-2xl font-bold mb-3">Backend</h3>
+              <div class="flex flex-wrap justify-center gap-2">
+                <span
+                  class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs md:text-sm"
+                  >Node.js</span
+                >
+                <span
+                  class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs md:text-sm"
+                  >Python</span
+                >
+                <span
+                  class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs md:text-sm"
+                  >Java</span
+                >
+                <span
+                  class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs md:text-sm"
+                  >Express.js</span
+                >
+              </div>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg text-center glass-morphism">
+              <h3 class="text-xl md:text-2xl font-bold mb-3">DevOps & Cloud</h3>
+              <div class="flex flex-wrap justify-center gap-2">
+                <span
+                  class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs md:text-sm"
+                  >Google Cloud</span
+                >
+                <span
+                  class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs md:text-sm"
+                  >AWS</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4">
+            <div class="bg-gray-800 p-4 rounded-lg text-center glass-morphism">
+              <h3 class="text-xl md:text-2xl font-bold mb-3">Databases</h3>
+              <div class="flex flex-wrap justify-center gap-2">
+                <span
+                  class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs md:text-sm"
+                  >MongoDB</span
+                >
+                <span
+                  class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs md:text-sm"
+                  >PostgreSQL</span
+                >
+                <span
+                  class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs md:text-sm"
+                  >MySQL</span
+                >
+                <span
+                  class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs md:text-sm"
+                  >Firebase</span
+                >
+                <span
+                  class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs md:text-sm"
+                  >GraphQL</span
+                >
+              </div>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg text-center glass-morphism">
+              <h3 class="text-xl md:text-2xl font-bold mb-3">Other Tools</h3>
+              <div class="flex flex-wrap justify-center gap-2">
+                <span
+                  class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs md:text-sm"
+                  >Git</span
+                >
+                <span
+                  class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs md:text-sm"
+                  >Blockchain</span
+                >
+                <span
+                  class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs md:text-sm"
+                  >Webpack</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center animate-slide-in">
+          <img
+            src="./assets/me.jpg"
+            alt="Profile"
+            class="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover border-4 border-blue-600"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="bg-gray-800 py-16 md:py-24">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+          Featured Projects
+        </h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="bg-gray-700 rounded-lg overflow-hidden glass-morphism animate-slide-in"
+          >
+            <img
+              src="/assets/4.png"
+              alt="Farmgate"
+              class="w-full h-48 md:h-56 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl md:text-2xl font-bold mb-4">Farmgate</h3>
+              <p class="text-sm md:text-base mb-4">
+                Developed a loaning platform for farmers using blockchain
+                technology which is widely used in South Africa.
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-gray-700 rounded-lg overflow-hidden glass-morphism animate-slide-in"
+          >
+            <img
+              src="/assets/13.png"
+              alt="Juan"
+              class="w-full h-48 md:h-56 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl md:text-2xl font-bold mb-4">JuanD'Job</h3>
+              <p class="text-sm md:text-base mb-4">
+                A Job matching app for someone who is looking for a job and
+                someone who's looking for a worker.
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-gray-700 rounded-lg overflow-hidden glass-morphism animate-slide-in"
+          >
+            <img
+              src="/assets/14.png"
+              alt="SafeTalks "
+              class="w-full h-48 md:h-56 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl md:text-2xl font-bold mb-4">SafeTalks v.2</h3>
+              <p class="text-sm md:text-base mb-4">
+                A community designed application for peer-educators and for the
+                youth who seeks help when it comes to SRH.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container mx-auto px-4 py-16 md:py-24">
+      <div class="max-w-lg mx-auto text-center animate-slide-in">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Contact Me</h2>
+        <p class="text-lg md:text-xl mb-8">
+          Let's discuss how we can bring your digital vision to life.
+        </p>
+        <form class="space-y-4">
+          <input
+            type="text"
+            placeholder="Your Name"
+            class="w-full p-3 bg-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+          />
+          <input
+            type="email"
+            placeholder="Your Email"
+            class="w-full p-3 bg-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+          />
+          <textarea
+            placeholder="Your Message"
+            rows="5"
+            class="w-full p-3 bg-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+          ></textarea>
+          <button
+            class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="bg-gray-800 py-8 text-center">
+      <div class="container mx-auto px-4">
+        <p>&copy; 2024 CyberNex Innovate. All Rights Reserved.</p>
+        <div class="flex justify-center space-x-4 mt-4">
+          <a href="#" class="text-gray-400 hover:text-white">LinkedIn</a>
+          <a href="#" class="text-gray-400 hover:text-white">GitHub</a>
+          <a href="#" class="text-gray-400 hover:text-white">Twitter</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
